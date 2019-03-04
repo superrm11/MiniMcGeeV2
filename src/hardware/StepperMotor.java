@@ -211,6 +211,7 @@ public int step(int direction)
 	else if(lowerLimit != upperLimit && position < lowerLimit && direction < 0)
 		return position;
 	
+	
 	switch(currentStep)
 	{
 	case 0:

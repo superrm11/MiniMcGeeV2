@@ -1,5 +1,7 @@
 package hardware;
 
+import hardware.MotorController;
+
 public class SwerveDrive
 {
 	private final StepperMotor frontLeftDirection, backLeftDirection, frontRightDirection, backRightDirection;

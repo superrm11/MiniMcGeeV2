@@ -64,7 +64,7 @@ public void drive(double magnitude, double direction, double rotation)
 	if (Math.abs(rotation) > deadband)
 	{
 		int steps45 = (int) ((stepsPerRev / 360.0) * 45);
-		setDirection(steps45, -steps45, -steps45, steps45);
+		rotation *= Math.pow(setDirection(steps45, -steps45, -steps45, steps45), 3);
 		drive(rotation, rotation, -rotation, -rotation);
 	}
 	// If we are not rotating, set the direction and drive the robot.
